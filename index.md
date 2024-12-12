@@ -1,4 +1,6 @@
 ---
-title: Welcome to my blog
+title: Welcome to my Resume
 ---
 
+# Philip Parks
+### Software Developer | Problem solver
