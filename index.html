@@ -1,289 +1,54 @@
-<!DOCTYPE html> <!--indicates HTML5-->
-
-<!--language is specified as English, United States-->
-<html lang="en-US">
-
-<!--the head is meant to hold meta information, title, and links-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="resume, Philip parks"> <!-- SEO search engine optomization -->
-    <meta name="description" content="Philip Parks Resume">
-    <meta name="author" content="Philip Parks">
-    <!-- <meta http-equiv="refresh" content="30"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip Parks Resume</title>
-    <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav .logo h1 {
-    font-size: 2rem;
-}
-
-header nav .logo p {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.hero {
-    background: #3498db;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 2.5rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.cta-button {
-    padding: 10px 20px;
-    background-color: #2c3e50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    margin-top: 20px;
-}
-
-section {
-    padding: 40px 20px;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.skills-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.skill {
-    flex: 1;
-    margin: 10px;
-}
-
-.skill h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-footer ul li {
-    margin: 0 15px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-
-    </style>
-</head>
-
-<!--the body holds the visible elements of the page-->
-<body>
-    <header>
-        <nav>
-            <div class="logo">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Philip Parks | Software Developer</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="home">
+        <!-- //  INTRO  // -->
+         <div class="content-wrapper">
+            <div class="content-bg">
+                <header>
+                <!-- Start content edits below this line. -->
                 <h1>Philip Parks</h1>
-                <p>Software Developer | Problem Solver | Innovator</p>
+                <h2>Software Developer | Problem Solver</h2>
+
+                <!-- End content edits here. -->
+                </header>
+
+                <!-- //  ABOUT ME  // -->
+                <main>
+                <!-- Start content edits below this line. -->
+                <p>I am an experienced problem solver with over 13 years of troubleshooting and leadership experience. Most of my experience comes from my time in the United States Army and has been enhanced over the past 10 years through my experience as a data analyst and general manager in a small retail business. I most recently earned my Bachelor of Computer Science with a focus on Software Development from Western Goverenors University. The primary focus of my studies was the software development life cycle through the development of several Java applications using the JavaFX framework. These applications were used to interact with several databases (PostgreSQL, MySQL, SQLite, etc.) using JDBC.
+                </p>
+                <p>To learn more about my work history or projects, check our my <a href="https://philipparks.github.io/resume/resumeExample.html">resume</a>. Thanks for stopping by!</p>
+
+                <!-- End content edits here. -->
+                </main>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://philipparks.github.io/resume/timelines/work_timeline.html">Work History</a></li>
-                <li><a href="https://philipparks.github.io/resume/timelines/education_timeline.html">Education</a></li>
+        </div>
+
+        <!-- //  FOOTERE INFO, SOCIAL MEDIA  // -->
+        <footer>
+            <!-- Start content edits below this line. -->
+            <p>© 2025 by Philip Parks | <a href="mailto:philiprparks@gmail.com">philiprparks@gmail.com</a></p>
+
+            <!-- Add or remove any networks. -->
+            <ul class="socials">
+                <li>
+                    <a href="https://www.linkedin.com/in/philipparks/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/philip.parks1/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://github.com/philipParks" target="_blank">Github</a>
+                </li>
             </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Hi, I'm Philip Parks</h2>
-            <p>A passionate software developer with a focus on creating scalable and efficient Java applications.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
-    
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I'm a Java developer with a bachelors degree in software development and 2 years of experience building Java applications, optimizing user experiences, and solving real-world problems through code.
-            </p>
-            <p>
-                I specialize in Java and SQL. I believe in writing clean, maintainable code and continuously learning new technologies to stay on the cutting edge.
-            </p>
-        </div>
-    </section>
-
-    <hr>
-    
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5, CSS3, JavaScript</li>
-                        <li>Responsive Design</li>
-                        <li>UX/UI Principles</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>RESTful APIs</li>
-                        <li>Database Management (MySQL, postgreSQL)</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>DevOps & Tools</h3>
-                    <ul>
-                        <li>CI/CD</li>
-                        <li>AWS</li>
-                        <li>Git, GitHub</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-    
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I’ve worked on recently:</p>
-
-            <div class="project-list">
-                <div class="project">
-                    <h3>Inventory Manager</h3>
-                    <p>For my capstone project I built a stand alone Java application. It is an inventory manager for an engine rebuild shop.</p>
-                    <a href="https://github.com/philipParks/inventory-manager" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-list">
-                <div class="project">
-                    <h3>Project Manager</h3>
-                    <p>For my first independant project I wanted to create something that I could use in the rest of my projects.
-                         It is a project manager that will include a blog that will follow the project management life cycle. You can view the blog 
-                         <a href="https://philipparks.github.io/resume/posts/project_manager_info.html" target="_blank">here</a>.</p>
-                    <a href="https://github.com/philipParks/project_manager" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <hr>
-    
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me!</p>
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-    
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Philip Parks. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="https://github.com/philipParks" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/philipparksbyes" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:philiprparks@gmail.com">Email</a></li>
-            </ul>
-        </div>
-    </footer>
-
-
-</body>
+            <!-- End content edits here. -->
+        </footer>
+    </body>
 </html>
