@@ -1,409 +1,415 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="resume, Philip parks"> <!-- SEO search engine optomization -->
+      <meta name="description" content="Philip Parks Resume">
+      <meta name="author" content="Philip Parks">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Philip Parks | Military Timeline</title>
+      <link rel="stylesheet" href="css/style.css">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
+    body {
+      background-color: #474e5d;
+      font-family: Helvetica, sans-serif;
+    }
 
-header {
-    background-color: #FF9F55;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+    header {
+        background-color: #FF9F55;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
 
-header nav .logo h1 {
-    font-size: 2rem;
-}
+    header nav .logo h1 {
+        font-size: 2rem;
+    }
 
-header nav .logo p {
-    font-size: 1rem;
-    font-weight: 300;
-}
+    header nav .logo p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
 
-nav ul li {
-    margin: 0 15px;
-}
+    nav ul li {
+        margin: 0 15px;
+    }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: white;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
+    /* Container around content */
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
 
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
+    /* The circles on the timeline */
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #FF9F55;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
 
-/* Place the container to the left */
-.left {
-  left: 0;
-}
+    /* Place the container to the left */
+    .left {
+      left: 0;
+    }
 
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
+    /* Place the container to the right */
+    .right {
+      left: 50%;
+    }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid white;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+    }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
 
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
+    /* Fix the circle for containers on the right side */
+    .right::after {
+      left: -16px;
+    }
 
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
+    /* The actual content */
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+    }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+      /* Place the timelime to the left */
+      .timeline::after {
+      left: 31px;
+      }
+      
+      /* Full-width containers */
+      .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      }
+      
+      /* Make sure that all arrows are pointing leftwards */
+      .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+      }
 
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-}
-</style>
-</head>
-<body>
+      /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+      left: 15px;
+      }
+      
+      /* Make all right containers behave like the left ones */
+      .right {
+      left: 0%;
+      }
+    }
+    </style>
+    </head>
+    <body>
 
-  <header>
-    <nav>
-        <div class="logo">
-            <h1>Military Timeline</h1>
-            <h2>Philip Parks</h2>
+      <header>
+        <nav>
+            <div class="logo">
+                <h1>Military Timeline</h1>
+                <h2>Philip Parks</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="https://philipparks.github.io/resume/">Home</a></li>
+                <li><a href="https://philipparks.github.io/resume/timelines/work_timeline.html">Work History</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <div class="timeline">
+        <div class="container right">
+          <div class="content">
+            <h2>November 2014 | Honorable Discharge</h2>
+            <p>I was medically retired from service due to complications related to PTSD.</p>
+          </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="https://philipparks.github.io/resume/">Home</a></li>
-            <li><a href="https://philipparks.github.io/resume/timelines/work_timeline.html">Work History</a></li>
-        </ul>
-    </nav>
-  </header>
-
-  <div class="timeline">
-    <div class="container right">
-      <div class="content">
-        <h2>November 2014 | Honorable Discharge</h2>
-        <p>I was medically retired from service due to complications related to PTSD.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>March 2012 - July 2012 | Deployment 4</h2>
-        <h3>Location: </h3>
-        <h4>Afghanistan</h4>
-        <p>I was assigned as a truck commander for an MRV recover team called the A Team that provided recovery support to convoys throughout the theatre of operation. I was medically evacuated due to complications related to PTSD.</p>
-        <img src="https://philipparks.github.io/resume/image/natoMedal.jpeg" alt="NATO Medal" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>January 2012 | MaxxPro Recovery Vehicle Training</h2>
-        <p>I attended a training course on the maintenance and opperation of the MaxxPro Recovery Vehicle (MRV).</p>
-        <img src="https://philipparks.github.io/resume/image/mrvCert.jpeg" alt="MaxxPro Recovery Vehicle OPNET Certificate of Completion" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>November 2011 - December 2011 | Wheeled Vehicle Recovery Course H8</h2>
-        <p>I attended a training course on the recovery of military vehicles and completed all assessments with a 98.5% average and achieved the H8 MOS identifier.</p>
-        <img src="https://philipparks.github.io/resume/image/h8Diploma.jpeg" alt="Wheeled Vehicle Recovery Specialist Course Diploma" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>June 2011 - July 2011 | MRAP University</h2>
-        <p>I attended a train the trainer course that covered field level support on the MRAP family of vehicles including RG31, Cougar, RG33, Caiman, MaxxPro, and M-ATV.</p>
-        <img src="https://philipparks.github.io/resume/image/mrapCert.jpeg" alt="MRAP Family of Vehicles Train the Trainer Course Certificate of Completion" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>May 2011 - June 2011 | Wheeled Vehicle Mechanic ALC</h2>
-        <p>I attended a sattelite training course and completed all assessments with a 99% average.</p>
-        <img src="https://philipparks.github.io/resume/image/alcDiploma.jpeg" alt="Advance Leadership Course Diploma" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>May 2009 - May 2010 | Deployment 3</h2>
-        <h3>Location: </h3>
-        <h4>LSA Anaconda, Balad Airbase, Iraq</h4>
-        <p>I was assigned as a squad leader for a maintenance team that was primarily responsible for the repair and maintenance of MRAP vehicles. I also had the only squad to have all members participate in the Air Force Half Marathon and I also played drums for the church services on post.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>August 2008 | BNCOC Common Core</h2>
-        <p>I attended the training course and completed all assessments with a 95% average.</p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>December 2006 - November 2007 | Deployment 2</h2>
-        <h3>Location: </h3>
-        <h4>Camp Speicher, Majid al Tamimi Airbase, Iraq</h4>
-        <p>I was first assigned to a maintenance team to repair vehicles. Shortly after that, I was assigned to a team that installed uparmor kits on vehicles. Roughly halfway through this tour I was assigned to a special combat recovery unit called the Black Knights as a truck commander.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>October 2006 | Last Duty Station</h2>
-        <h3>Location: </h3>
-        <h4>Fort Drum, New York</h4>
-        <h3>Unit:</h3>
-        <h4>514<sup>th</sup> Maintenance Company</h4>
-        <p>I was assigned as a squad leader in the Maintenance Platoon.</p>
-      </div>
-    </div>
-    <div class="container right">
-        <div class="content">
-          <h2>September 2005 | Promotion to SGT</h2>
-          <p>I was promoted to the rank of Sergeant and assigned as a squad leader in the motor pool.</p>
+        <div class="container left">
+          <div class="content">
+            <h2>March 2012 - July 2012 | Deployment 4</h2>
+            <h3>Location: </h3>
+            <h4>Afghanistan</h4>
+            <p>I was assigned as a truck commander for an MRV recover team called the A Team that provided recovery support to convoys throughout the theatre of operation. I was medically evacuated due to complications related to PTSD.</p>
+            <img src="https://philipparks.github.io/resume/image/natoMedal.jpeg" alt="NATO Medal" width="100%" height="100%">
+          </div>
         </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>August 2005 - September 2005 | PLDC (Primary Leadership Development Course)</h2>
-        <p>I attended the Wightman NCO Academy where I achieved an academic average of 100%, the highest in my class.</p>
+        <div class="container right">
+          <div class="content">
+            <h2>January 2012 | MaxxPro Recovery Vehicle Training</h2>
+            <p>I attended a training course on the maintenance and opperation of the MaxxPro Recovery Vehicle (MRV).</p>
+            <img src="https://philipparks.github.io/resume/image/mrvCert.jpeg" alt="MaxxPro Recovery Vehicle OPNET Certificate of Completion" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>November 2011 - December 2011 | Wheeled Vehicle Recovery Course H8</h2>
+            <p>I attended a training course on the recovery of military vehicles and completed all assessments with a 98.5% average and achieved the H8 MOS identifier.</p>
+            <img src="https://philipparks.github.io/resume/image/h8Diploma.jpeg" alt="Wheeled Vehicle Recovery Specialist Course Diploma" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>June 2011 - July 2011 | MRAP University</h2>
+            <p>I attended a train the trainer course that covered field level support on the MRAP family of vehicles including RG31, Cougar, RG33, Caiman, MaxxPro, and M-ATV.</p>
+            <img src="https://philipparks.github.io/resume/image/mrapCert.jpeg" alt="MRAP Family of Vehicles Train the Trainer Course Certificate of Completion" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>May 2011 - June 2011 | Wheeled Vehicle Mechanic ALC</h2>
+            <p>I attended a sattelite training course and completed all assessments with a 99% average.</p>
+            <img src="https://philipparks.github.io/resume/image/alcDiploma.jpeg" alt="Advance Leadership Course Diploma" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>May 2009 - May 2010 | Deployment 3</h2>
+            <h3>Location: </h3>
+            <h4>LSA Anaconda, Balad Airbase, Iraq</h4>
+            <p>I was assigned as a squad leader for a maintenance team that was primarily responsible for the repair and maintenance of MRAP vehicles. I also had the only squad to have all members participate in the Air Force Half Marathon and I also played drums for the church services on post.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>August 2008 | BNCOC Common Core</h2>
+            <p>I attended the training course and completed all assessments with a 95% average.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>December 2006 - November 2007 | Deployment 2</h2>
+            <h3>Location: </h3>
+            <h4>Camp Speicher, Majid al Tamimi Airbase, Iraq</h4>
+            <p>I was first assigned to a maintenance team to repair vehicles. Shortly after that, I was assigned to a team that installed uparmor kits on vehicles. Roughly halfway through this tour I was assigned to a special combat recovery unit called the Black Knights as a truck commander.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>October 2006 | Last Duty Station</h2>
+            <h3>Location: </h3>
+            <h4>Fort Drum, New York</h4>
+            <h3>Unit:</h3>
+            <h4>514<sup>th</sup> Maintenance Company</h4>
+            <p>I was assigned as a squad leader in the Maintenance Platoon.</p>
+          </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h2>September 2005 | Promotion to SGT</h2>
+              <p>I was promoted to the rank of Sergeant and assigned as a squad leader in the motor pool.</p>
+            </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>August 2005 - September 2005 | PLDC (Primary Leadership Development Course)</h2>
+            <p>I attended the Wightman NCO Academy where I achieved an academic average of 100%, the highest in my class.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>March 2005 | Hardship Tour</h2>
+            <h3>Location: </h3>
+            <h4>Camp Humphreys, Pyeongtaek, South Korea</h4>
+            <h3>Unit:</h3>
+            <h4>23<sup>rd</sup> Area Support Group</h4>
+            <p>I was assigned as a mechanic in the maintenance platoon.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>January 2005 | PCS (Permanent Change of Station) Award</h2>
+            <p>Awarded the Army Achievement Medal for my performance while assigned to the 1<sup>st</sup> Maintenance Company.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>June 2004 | Reenlistment</h2>
+            <p>I reenlisted in the Army to be assigned to a hardship tour in Korea with guaranteed return assignment to Fort Drum, New York.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>April 2004 | Unit Armorer Course</h2>
+            <p>I completed the unit armorer course which covered the maintenance and accountability of unit arms. I was subsequently assigned as the unit armorer for 1<sup>st</sup> Maintenance Company.</p>
+            <img src="https://philipparks.github.io/resume/image/armorerCert.jpeg" alt="Unit Armorer Course Certificate of Training" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>September 2003 | Deployment 1</h2>
+            <h3>Location: </h3>
+            <h4>Camp Junction City, Ramadi, Iraq</h4>
+            <p>I was deployed to Iraq and my MST was further assigned to support operations on Camp Junction City in Ramadi, Iraq. I was medically evacuated in January of 2004. I was awarded an ARCOM (Army Comendation Medal) for my contributions to my units mission.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>August 2003 | Promotion to SPC</h2>
+            <p>I was promoted to the rank of Specialist.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>June 2003 | Ammunition Handler Course</h2>
+            <p>I completed the ammunition handlers course which covered the handling and transportation of hazardous materials.</p>
+            <img src="https://philipparks.github.io/resume/image/ammunitionCert.jpeg" alt="Amunition Handler Course Certificate of Training" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>October 2002 |  Promotion to PFC</h2>
+            <p>I was promoted to the rank of Private First Class.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>August 2002 | Drivers Training Course</h2>
+            <p>I completed the military vehicle drivers course which covered accident avoidance, M998 operation, and Fort Riley & Kansas Laws and Regulations. After my initial training, I was further trained on the operation of many other military vehicles.</p>
+            <img src="https://philipparks.github.io/resume/image/driverTrainingCert.jpeg" alt="Drivers Training Course Certificate of Training" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>July 14, 2002 | First Duty Station</h2>
+            <h3>Location: </h3>
+            <h4>Fort Riley, Kansas</h4>
+            <h3>Unit:</h3>
+            <h4>1<sup>st</sup> Maintenance Company</h4>
+            <p>I was assigned to MST (Maintenance Support Team) 3 of the Maintenance Platoon and given ownership of the contact truck for the team.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>March 29, 2002 - June 21, 2002 | AIT (Advanced Individual Training)</h2>
+            <h3>Location: </h3>
+            <h4>Aberdeen Proving Grounds, Maryland</h4>
+            <h3>Unit:</h3>
+            <h4>2<sup>nd</sup> Platoon, Company C, 143<sup>rd</sup> Ordnance Battalion, 61<sup>st</sup> Ordnance Brigade</h4>
+            <p>I was the honor graduate of my wheeled vehicle repairer course and was awarded membership in the Ordnance Corps and the MOS of 63W1O.</p>
+            <img src="https://philipparks.github.io/resume/image/mechanicDiploma.jpeg" alt="Advanced Individual Training Wheeled Vehicle Repairer Course Honor Graduate Diploma" width="100%" height="100%">
+            <img src="https://philipparks.github.io/resume/image/ordnanceCoa.jpeg" alt="Ordnance Corps Cercificate of Association" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>January 15, 2002 - March 29, 2002 | Basic Training</h2>
+            <h3>Location: </h3>
+            <h4>Fort Knox, Kentucky</h4>
+            <h3>Unit:</h3>
+            <h4>1<sup>st</sup> Platoon, Company C, 2<sup>nd</sup> Battalion, 46<sup>th</sup> Infantry</h4>
+            <p>I completed basic training on time, passing all assessments.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+              <h2>September - December 2001 | Processing</h2>
+              <h3>September 4</h3>
+              <p>Meeting with recruiter to select my MOS (Military Ocupational Specialty) of 63W (Heavy Wheeled Vehicle Mechanic).</p>
+              <h3>November 6</h3>
+              <p>First attempt to pass the medical evaluation. Failed due to being underwieght.</p>
+              <h3>November 17</h3>
+              <p>Second attempt to pass the medical evaluation. Passed.</p>
+              <h3>December 5</h3>
+              <p>Received my ship date for basic training from the recruiter.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+              <h2>August 2001 | Pre Processing</h2>
+              <h3>Recruiter</h3>
+              <p>I walked in to the recruiters station in Waterville, Maine and asked what I needed to do to enlist in the United States Army.</p>
+              <h3>ASVAB (Armed Services Vocational Aptitude Battery)</h3>
+              <p>I took my ASVAB in Bangor, Maine with the following results:</p>
+              <ul>
+                  <li>General Technical (GT): 112</li>
+                  <li>Clerical (CL): 108</li>
+                  <li>Combat (CO): 109</li>
+                  <li>Electronics (EL): 110</li>
+                  <li>Field Artillery (FA): 110</li>
+                  <li>General Maintenance (GM): 109</li>
+                  <li>Mechanaical Maintenance (MM): 112</li>
+                  <li>Operators and Food (OF): 111</li>
+                  <li>Surveillance and Communicationss (SC): 109</li>
+                  <li>Skilled Technical (ST): 110</li>
+              </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>March 2005 | Hardship Tour</h2>
-        <h3>Location: </h3>
-        <h4>Camp Humphreys, Pyeongtaek, South Korea</h4>
-        <h3>Unit:</h3>
-        <h4>23<sup>rd</sup> Area Support Group</h4>
-        <p>I was assigned as a mechanic in the maintenance platoon.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>January 2005 | PCS (Permanent Change of Station) Award</h2>
-        <p>Awarded the Army Achievement Medal for my performance while assigned to the 1<sup>st</sup> Maintenance Company.</p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>June 2004 | Reenlistment</h2>
-        <p>I reenlisted in the Army to be assigned to a hardship tour in Korea with guaranteed return assignment to Fort Drum, New York.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>April 2004 | Unit Armorer Course</h2>
-        <p>I completed the unit armorer course which covered the maintenance and accountability of unit arms. I was subsequently assigned as the unit armorer for 1<sup>st</sup> Maintenance Company.</p>
-        <img src="https://philipparks.github.io/resume/image/armorerCert.jpeg" alt="Unit Armorer Course Certificate of Training" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>September 2003 | Deployment 1</h2>
-        <h3>Location: </h3>
-        <h4>Camp Junction City, Ramadi, Iraq</h4>
-        <p>I was deployed to Iraq and my MST was further assigned to support operations on Camp Junction City in Ramadi, Iraq. I was medically evacuated in January of 2004. I was awarded an ARCOM (Army Comendation Medal) for my contributions to my units mission.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>August 2003 | Promotion to SPC</h2>
-        <p>I was promoted to the rank of Specialist.</p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>June 2003 | Ammunition Handler Course</h2>
-        <p>I completed the ammunition handlers course which covered the handling and transportation of hazardous materials.</p>
-        <img src="https://philipparks.github.io/resume/image/ammunitionCert.jpeg" alt="Amunition Handler Course Certificate of Training" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>October 2002 |  Promotion to PFC</h2>
-        <p>I was promoted to the rank of Private First Class.</p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>August 2002 | Drivers Training Course</h2>
-        <p>I completed the military vehicle drivers course which covered accident avoidance, M998 operation, and Fort Riley & Kansas Laws and Regulations. After my initial training, I was further trained on the operation of many other military vehicles.</p>
-        <img src="https://philipparks.github.io/resume/image/driverTrainingCert.jpeg" alt="Drivers Training Course Certificate of Training" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>July 14, 2002 | First Duty Station</h2>
-        <h3>Location: </h3>
-        <h4>Fort Riley, Kansas</h4>
-        <h3>Unit:</h3>
-        <h4>1<sup>st</sup> Maintenance Company</h4>
-        <p>I was assigned to MST (Maintenance Support Team) 3 of the Maintenance Platoon and given ownership of the contact truck for the team.</p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <h2>March 29, 2002 - June 21, 2002 | AIT (Advanced Individual Training)</h2>
-        <h3>Location: </h3>
-        <h4>Aberdeen Proving Grounds, Maryland</h4>
-        <h3>Unit:</h3>
-        <h4>2<sup>nd</sup> Platoon, Company C, 143<sup>rd</sup> Ordnance Battalion, 61<sup>st</sup> Ordnance Brigade</h4>
-        <p>I was the honor graduate of my wheeled vehicle repairer course and was awarded membership in the Ordnance Corps and the MOS of 63W1O.</p>
-        <img src="https://philipparks.github.io/resume/image/mechanicDiploma.jpeg" alt="Advanced Individual Training Wheeled Vehicle Repairer Course Honor Graduate Diploma" width="100%" height="100%">
-        <img src="https://philipparks.github.io/resume/image/ordnanceCoa.jpeg" alt="Ordnance Corps Cercificate of Association" width="100%" height="100%">
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <h2>January 15, 2002 - March 29, 2002 | Basic Training</h2>
-        <h3>Location: </h3>
-        <h4>Fort Knox, Kentucky</h4>
-        <h3>Unit:</h3>
-        <h4>1<sup>st</sup> Platoon, Company C, 2<sup>nd</sup> Battalion, 46<sup>th</sup> Infantry</h4>
-        <p>I completed basic training on time, passing all assessments.</p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-          <h2>September - December 2001 | Processing</h2>
-          <h3>September 4</h3>
-          <p>Meeting with recruiter to select my MOS (Military Ocupational Specialty) of 63W (Heavy Wheeled Vehicle Mechanic).</p>
-          <h3>November 6</h3>
-          <p>First attempt to pass the medical evaluation. Failed due to being underwieght.</p>
-          <h3>November 17</h3>
-          <p>Second attempt to pass the medical evaluation. Passed.</p>
-          <h3>December 5</h3>
-          <p>Received my ship date for basic training from the recruiter.</p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-          <h2>August 2001 | Pre Processing</h2>
-          <h3>Recruiter</h3>
-          <p>I walked in to the recruiters station in Waterville, Maine and asked what I needed to do to enlist in the United States Army.</p>
-          <h3>ASVAB (Armed Services Vocational Aptitude Battery)</h3>
-          <p>I took my ASVAB in Bangor, Maine with the following results:</p>
-          <ul>
-              <li>General Technical (GT): 112</li>
-              <li>Clerical (CL): 108</li>
-              <li>Combat (CO): 109</li>
-              <li>Electronics (EL): 110</li>
-              <li>Field Artillery (FA): 110</li>
-              <li>General Maintenance (GM): 109</li>
-              <li>Mechanaical Maintenance (MM): 112</li>
-              <li>Operators and Food (OF): 111</li>
-              <li>Surveillance and Communicationss (SC): 109</li>
-              <li>Skilled Technical (ST): 110</li>
-          </ul>
-      </div>
-    </div>
-  </div>
 
-</body>
-</html>
+    </body>
+  </html>
