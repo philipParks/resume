@@ -8,29 +8,6 @@ Light gray  #d3d4d6
 Off-white  #f6f6f6
 */
 
-/* 
-The Box Model Fix
-https://www.paulirish.com/2012/box-sizing-border-box-ftw/
-
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-*/
-
-/*
-Clearfix Hack
-fixes float clearing issues
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-*/
-
 /* GLOBAL STYLES
 ----------------*/
 
