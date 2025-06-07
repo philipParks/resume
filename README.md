@@ -26,13 +26,13 @@ _Under construction._
 
 ### Recent Changes
 
-I have added a blog template for posting blogs.
+I have been working on my blog section. I will be setting a release schedule soon.
 
 I recently added my military service, work history, and education timelines.
 
 ### What's next?
 
-- First blog post.
+- Blog posting schedule.
 - Finish work history timeline.
 
 <footer>
@@ -43,6 +43,5 @@ I recently added my military service, work history, and education timelines.
 -->
 
 ---
-
 
 </footer>
